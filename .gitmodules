@@ -1,0 +1,18 @@
+[submodule "tiago_robot"]
+	path = tiago_robot
+	url = git@github.com:pal-robotics/tiago_robot.git
+[submodule "tiago_description_calibration"]
+	path = tiago_description_calibration
+	url = https://github.com/pal-robotics/tiago_description_calibration.git
+[submodule "pmb2_robot"]
+	path = pmb2_robot
+	url = git@github.com:pal-robotics/pmb2_robot.git
+[submodule "hey5_description"]
+	path = hey5_description
+	url = git@github.com:pal-robotics/hey5_description.git
+[submodule "tiago_dual_description_calibration"]
+	path = tiago_dual_description_calibration
+	url = https://github.com/pal-robotics/tiago_dual_description_calibration.git
+[submodule "tiago_dual_robot"]
+	path = tiago_dual_robot
+	url = https://github.com/pal-robotics/tiago_dual_robot.git
