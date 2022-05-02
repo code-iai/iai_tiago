@@ -10,10 +10,6 @@
 	path = pmb2_robot
 	url =  https://github.com/pal-robotics/pmb2_robot.git
 	branch = kinetic-devel
-[submodule "hey5_description"]
-	path = hey5_description
-	url =  https://github.com/pal-robotics/hey5_description.git
-	branch = master
 [submodule "tiago_dual_description_calibration"]
 	path = tiago_dual_description_calibration
 	url = https://github.com/pal-robotics/tiago_dual_description_calibration.git
