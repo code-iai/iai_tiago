@@ -22,3 +22,7 @@
 	path = pal_gripper
 	url = https://github.com/pal-robotics/pal_gripper.git
 	branch = kinetic-devel
+[submodule "hey5_description"]
+	path = hey5_description
+	url = https://github.com/pal-robotics/hey5_description.git
+	branch = master

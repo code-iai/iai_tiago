@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find tiago_dual_description)/robots/upload.launch">
+        <arg name="end_effector_left" value="pal-gripper" />
+        <arg name="end_effector_right" value="pal-gripper" />
+    </include>
+</launch>
