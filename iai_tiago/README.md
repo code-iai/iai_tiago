@@ -33,7 +33,8 @@ CL-USER> (ros-load:load-system "cram_tiago_process_modules" :cram-tiago-process-
 
 
 # Turn off the robot
+Move the robot so he has 2 meters around him free space.
+Press the Home button on the LCD screen on the robot base.
 Press the Green button for a second or two until it starts blinking.
-Hold the robot's hands so they don't fall on the floor when the robot goes limp.
 When the robot goes limp, put the robot's hands on the black squishy pads on the base.
 Press the Red button.
