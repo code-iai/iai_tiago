@@ -26,3 +26,12 @@
 	path = hey5_description
 	url = https://github.com/pal-robotics/hey5_description.git
 	branch = master
+[submodule "urdf_test"]
+	path = urdf_test
+	url = https://github.com/pal-robotics/urdf_test.git
+[submodule "custom_end_effector"]
+	path = custom_end_effector
+	url = https://github.com/pal-robotics/custom_end_effector.git
+[submodule "pal_wsg_gripper"]
+	path = pal_wsg_gripper
+	url = https://github.com/pal-robotics/pal_wsg_gripper
