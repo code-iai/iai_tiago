@@ -35,3 +35,9 @@
 [submodule "pal_wsg_gripper"]
 	path = pal_wsg_gripper
 	url = https://github.com/pal-robotics/pal_wsg_gripper
+[submodule "pal_msgs"]
+	path = pal_msgs
+	url = https://github.com/pal-robotics/pal_msgs.git
+[submodule "humanoid_msgs"]
+	path = humanoid_msgs
+	url = https://github.com/ahornung/humanoid_msgs.git
