@@ -17,6 +17,15 @@ Press the Start button again to deactivate base movement before you start Giskar
 
 # Upload the kitchen URDF and state publisher
 $ roslaunch cram_projection_demos everything.launch tiago:=true apartment:=true upload_robot:=false
+# If you're only logging projection NEEMs, say upload_robot:=true
+
+# Start knowrob
+$ roslaunch knowrob knowrob.launch
+
+# If knowrob complains about rosprolog or mongo, start mongo
+$ sudo systemctl status mongod  # to check the status
+$ sudo systemctl start mongod
+
 
 # Start giskard
 $ roslaunch giskardpy giskardpy_tiago.launch
@@ -30,6 +39,18 @@ $ emacs &
 CL-USER> (ros-load:load-system "cram_projection_demos" :cram-projection-demos)
 CL-USER> (ros-load:load-system "cram_tiago_process_modules" :cram-tiago-process-modules)
 
+# If you need to log, load the cloud logger
+CL-USER> (ros-load:load-system "cram_cloud_logger" :cram-cloud-logger)
+# set TF broadcasting to true
+CL-USER> (setf cram-tf:*tf-broadcasting-enabled* t)
+CL-USER> (ccl::start-episode)
+
+# Start demo
+CL-USER> (roslisp-utilities:startup-ros)
+CL-USER> (demos::apartment-demo)
+
+# If you need to log, stop the episode:
+CL-USER> (ccl::stop-episode)
 
 
 # Turn off the robot
