@@ -1,3 +1,5 @@
+# todo put amcl.yaml on tiago and make it permament
+
 
 # Start the robot
 Press the Red button, wait for ??
@@ -37,20 +39,27 @@ $ rosrun robokudo start_rk_query.sh
 $ emacs &
 > Ctrl-c l
 CL-USER> (ros-load:load-system "cram_projection_demos" :cram-projection-demos)
+;; If you're only logging projection, don't do the next thing:
 CL-USER> (ros-load:load-system "cram_tiago_process_modules" :cram-tiago-process-modules)
 
 # If you need to log, load the cloud logger
 CL-USER> (ros-load:load-system "cram_cloud_logger" :cram-cloud-logger)
 # set TF broadcasting to true
 CL-USER> (setf cram-tf:*tf-broadcasting-enabled* t)
+
+# Start the ros node
+CL-USER> (roslisp-utilities:startup-ros)
+
+# if you're logging, start the episode
 CL-USER> (ccl::start-episode)
 
 # Start demo
-CL-USER> (roslisp-utilities:startup-ros)
 CL-USER> (demos::apartment-demo)
 
 # If you need to log, stop the episode:
 CL-USER> (ccl::stop-episode)
+
+# The logs are located in `echo $KNOWROB_MEMORY_DIR`
 
 
 # Turn off the robot
