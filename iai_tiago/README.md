@@ -1,8 +1,8 @@
-# todo put amcl.yaml on tiago and make it permament
-
+TIAGO README
+============
 
 # Start the robot
-Press the Red button, wait for ??
+Press the Red button.
 Press the Green button, wait for the robot to twitch.
 
 
@@ -11,6 +11,8 @@ Go to http://tiago.ai.loc:8080/
 Press the Stop button next to "head_manager: Running".
 It should change into "Stopped Stopped by user request.".
 
+# Disable localization on the robot
+Press the Stop button next to "localizer"
 
 # Use Joystick
 To move the robot base, press the Start button to enable base movement, then use the little joysticks.
@@ -20,6 +22,9 @@ Press the Start button again to deactivate base movement before you start Giskar
 # Upload the kitchen URDF and state publisher
 $ roslaunch cram_projection_demos everything.launch tiago:=true apartment:=true upload_robot:=false
 # If you're only logging projection NEEMs, say upload_robot:=true
+
+# Start the localization
+$ roslaunch iai_tiago_bringup localization.launch
 
 # Start knowrob
 $ roslaunch knowrob knowrob.launch
@@ -68,3 +73,7 @@ Press the Home button on the LCD screen on the robot base.
 Press the Green button for a second or two until it starts blinking.
 When the robot goes limp, put the robot's hands on the black squishy pads on the base.
 Press the Red button.
+
+
+
+# When last to leave on the ground floor of TAB, close all windows in apartment, lock the apartment door, double check everyone left and turn on the alarm.
