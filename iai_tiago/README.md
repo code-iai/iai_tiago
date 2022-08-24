@@ -11,9 +11,6 @@ Go to http://tiago.ai.loc:8080/
 Press the Stop button next to "head_manager: Running".
 It should change into "Stopped Stopped by user request.".
 
-# Disable localization on the robot
-Press the Stop button next to "localizer"
-
 # Use Joystick
 To move the robot base, press the Start button to enable base movement, then use the little joysticks.
 Press the Start button again to deactivate base movement before you start Giskard.
@@ -22,9 +19,6 @@ Press the Start button again to deactivate base movement before you start Giskar
 # Upload the kitchen URDF and state publisher
 $ roslaunch cram_projection_demos everything.launch tiago:=true apartment:=true upload_robot:=false
 # If you're only logging projection NEEMs, say upload_robot:=true
-
-# Start the localization
-$ roslaunch iai_tiago_bringup localization.launch
 
 # Start knowrob
 $ roslaunch knowrob knowrob.launch
