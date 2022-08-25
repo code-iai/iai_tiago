@@ -1,19 +1,19 @@
 # Odometry model:
 odom_model_type: diff-corrected
-odom_alpha1    : 2.0
-odom_alpha2    : 0.9
-odom_alpha3    : 2.5
-odom_alpha4    : 0.3
+odom_alpha1    : 2.5
+odom_alpha2    : 1.5
+odom_alpha3    : 3.0
+odom_alpha4    : 0.5
 
 # Particle filter:
 min_particles    : 500
 max_particles    : 1500
-kld_err          : 0.04
-kld_z            : 0.96
-update_min_d     : 0.01
-update_min_a     : 0.01
+kld_err          : 0.05
+kld_z            : 0.95
+update_min_d     : 0.005
+update_min_a     : 0.005
 resample_interval: 1
-converge_dist_threshold: 0.5
+# converge_dist_threshold: 0.5  # <- what the hell is this?
 
 # Note that whichever mixture weights are in use should sum to 1. 
 # The beam model uses all 4: z_hit, z_short, z_max, and z_rand. 
@@ -24,9 +24,9 @@ laser_model_type         : beam
 laser_max_range          : -1.0 #use reported max range (default)
 laser_min_range          : -1.0 #use reported min range (default)
 laser_max_beams          : 50
-laser_z_hit              : 0.91
+laser_z_hit              : 0.89
 laser_z_short            : 0.03
-laser_z_max              : 0.03
+laser_z_max              : 0.05
 laser_z_rand             : 0.03
 laser_sigma_hit          : 0.1
 laser_lambda_short       : 0.1
