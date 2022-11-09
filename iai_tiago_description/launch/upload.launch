@@ -1,0 +1,5 @@
+<launch>
+  <!-- Robot description -->
+  <param name="robot_description" textfile="$(find iai_tiago_description)/urdf/tiago_from_our_robot.urdf"/>
+  <rosparam command="load" file="$(find tiago_dual_description)/config/collision/collision_parameters.yaml" />
+</launch>
