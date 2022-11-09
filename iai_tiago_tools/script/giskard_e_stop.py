@@ -16,7 +16,7 @@ class MUH:
         self.cmd_vel_called = False
         self.giskard = GiskardWrapper()
         self.joy_sub = rospy.Subscriber('/joy', Joy, self.joy_cb)
-        self.cmd_vel_sub = rospy.Subscriber('/mobile_base_controller/cmd_vel', Twist, self.cmd_vel_cb)
+        self.cmd_vel_sub = rospy.Subscriber('/joy_vel', Twist, self.cmd_vel_cb)
         self.timer = rospy.Timer(rospy.Duration(1), self.timer_cb)
 
     def timer_cb(self, msg):
