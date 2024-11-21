@@ -41,3 +41,6 @@
 [submodule "humanoid_msgs"]
 	path = humanoid_msgs
 	url = https://github.com/ahornung/humanoid_msgs.git
+[submodule "pal_robotiq_gripper"]
+	path = pal_robotiq_gripper
+	url = https://github.com/pal-robotics/pal_robotiq_gripper.git
