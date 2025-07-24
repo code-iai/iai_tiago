@@ -44,3 +44,7 @@
 [submodule "pal_robotiq_gripper"]
 	path = pal_robotiq_gripper
 	url = https://github.com/pal-robotics/pal_robotiq_gripper.git
+[submodule "iai_tiago_description"]
+	path = iai_tiago_description
+	url = git@github.com:code-iai/iai_tiago_description.git
+	branch = main
